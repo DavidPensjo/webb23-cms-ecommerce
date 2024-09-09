@@ -25,7 +25,6 @@ function Dropdown({ blok }) {
     updateSelectWidth();
   }, []);
 
-  console.log(blok.options[0]);
 
   return (
     <div
