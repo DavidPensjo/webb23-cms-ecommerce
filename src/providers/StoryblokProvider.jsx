@@ -11,6 +11,8 @@ import ButtonSecondary from "@/components/nestable/ButtonSecondary";
 import ButtonOutlined from "@/components/nestable/ButtonOutlined";
 import ButtonRectangle from "@/components/nestable/ButtonRectangle";
 import Button from "@/components/nestable/Button";
+import ImageWithText from "@/components/nestable/ImageWithText";
+import ProductList from "@/components/nestable/ProductList";
 
 const components = {
   "page": Page,
@@ -20,7 +22,9 @@ const components = {
   "button_secondary": ButtonSecondary,
   "button_outlined": ButtonOutlined,
   "button_rectangle": ButtonRectangle,
-  "button": Button
+  "button": Button,
+  "image_with_text": ImageWithText,
+  "product_list": ProductList
 }
 
 storyblokInit({

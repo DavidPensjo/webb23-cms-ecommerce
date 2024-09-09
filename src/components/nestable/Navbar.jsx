@@ -9,7 +9,7 @@ const Navbar = ({ config }) => {
             <p className="font-bold cursor-pointer">{config.content.logo}</p>
           </Link>
           <div className="relative group">
-            <Link href="/list">
+            <Link href="/shop-list-page">
               <p className="cursor-pointer">Products</p>
             </Link>
             <div className="bg-white border border-fill_primary absolute left-0 mt-4 p-4 rounded shadow-lg z-10 transition-all ease-in-out duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
