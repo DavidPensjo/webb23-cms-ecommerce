@@ -11,9 +11,16 @@ storyblokInit({
 
 export default async function RootLayout({ children }) {
   const currentConfig = await StoryblokCMS.getConfig();
+
   return (
     <StoryblokProvider>
-      <html>
+      <html lang="en">
+        <head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
+        </head>
         <body>
           <Layout config={currentConfig}>{children}</Layout>
         </body>

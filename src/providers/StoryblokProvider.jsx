@@ -6,11 +6,15 @@ import Page from "@/components/content-types/Page";
 
 import Teaser from "@/components/nestable/Teaser";
 import RichTextDefault from "@/components/nestable/RichText";
+import ButtonPrimary from "@/components/nestable/ButtonPrimary";
+import ButtonSecondary from "@/components/nestable/ButtonSecondary";
 
 const components = {
   "page": Page,
   "teaser":Teaser,
-  "richtext": RichTextDefault
+  "richtext": RichTextDefault,
+  "button_primary": ButtonPrimary,
+  "button_secondary": ButtonSecondary
 }
 
 storyblokInit({

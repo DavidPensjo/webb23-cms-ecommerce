@@ -1,9 +1,49 @@
+@layer base {
+  html {
+    font-family: "Public Sans", sans-serif;
+  }
+
+  h1 {
+    @apply font-sans text-h1 font-semibold;
+  }
+  h2 {
+    @apply font-sans text-h2 font-semibold;
+  }
+  h3 {
+    @apply font-sans text-h3 font-semibold;
+  }
+  h4 {
+    @apply font-sans text-h4 font-semibold;
+  }
+  h5 {
+    @apply font-sans text-h5 font-semibold;
+  }
+
+  p.p1 {
+    @apply font-sans text-p1;
+  }
+  p.p2 {
+    @apply font-sans text-p2;
+  }
+  p.p3 {
+    @apply font-sans text-p3;
+  }
+  p.p4 {
+    @apply font-sans text-p4;
+  }
+  .btn-large {
+    @apply font-sans text-btnLarge font-semibold;
+  }
+
+  .btn-big {
+    @apply font-sans text-btnBig font-semibold;
+  }
+
+  .btn-small {
+    @apply font-sans text-btnSmall font-semibold;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
