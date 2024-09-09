@@ -12,7 +12,7 @@ const Navbar = ({ config }) => {
             <Link href="/list">
               <p className="cursor-pointer">Products</p>
             </Link>
-            <div className="border border-fill_primary absolute left-0 mt-4 p-4 rounded shadow-lg z-10 transition-all ease-in-out duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+            <div className="bg-white border border-fill_primary absolute left-0 mt-4 p-4 rounded shadow-lg z-10 transition-all ease-in-out duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
               {config.content.products.map((item, index) => (
                 <div className="flex w-44" key={index}>
                   <Link href={item.link.url}>
