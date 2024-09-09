@@ -3,7 +3,8 @@ import "./globals.css";
 import StoryblokProvider from "@/providers/StoryblokProvider";
 import { StoryblokCMS } from "@/utils/cms";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import ProductDetailPage from "@/components/nestable/ProductDetailPage";
 
 storyblokInit({
   accessToken: StoryblokCMS.TOKEN,
@@ -24,6 +25,7 @@ export default async function RootLayout({ children }) {
         </head>
         <body>
           <Layout config={currentConfig}>{children}</Layout>
+          <ProductDetailPage />
           <SpeedInsights />
         </body>
       </html>
