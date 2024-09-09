@@ -12,6 +12,9 @@ import ButtonOutlined from "@/components/nestable/ButtonOutlined";
 import ButtonRectangle from "@/components/nestable/ButtonRectangle";
 import Button from "@/components/nestable/Button";
 import Dropdown from "@/components/nestable/Dropdown";
+import ImageWithText from "@/components/nestable/ImageWithText";
+import ProductList from "@/components/nestable/ProductList";
+import ShopListHero from "@/components/nestable/ShopListHero";
 
 const components = {
   page: Page,
@@ -23,11 +26,13 @@ const components = {
   button_rectangle: ButtonRectangle,
   button: Button,
   dropdown: Dropdown,
+  image_with_text: ImageWithText,
+  product_list: ProductList,
+  shop_list_hero: ShopListHero
 };
 
 storyblokInit({
   accessToken: StoryblokCMS.TOKEN,
-
   use: [apiPlugin],
   components,
 });
