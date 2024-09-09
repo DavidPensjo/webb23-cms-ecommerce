@@ -18,6 +18,19 @@
   h5 {
     @apply font-sans text-h5 font-semibold;
   }
+
+  p.p1 {
+    @apply font-sans text-p1;
+  }
+  p.p2 {
+    @apply font-sans text-p2;
+  }
+  p.p3 {
+    @apply font-sans text-p3;
+  }
+  p.p4 {
+    @apply font-sans text-p4;
+  }
 }
 
 @tailwind base;
