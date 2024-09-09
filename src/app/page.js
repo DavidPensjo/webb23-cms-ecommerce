@@ -1,7 +1,6 @@
 import { StoryblokCMS } from "@/utils/cms";
 import { notFound } from "next/navigation";
 import StoryblokStory from "@storyblok/react/story";
-import Dropdown from "@/components/nestable/Dropdown";
 
 export async function generateMetadata() {
   return StoryblokCMS.generateMetaFromStory("home");
@@ -15,7 +14,6 @@ export default async function StartPage({}) {
     return (
       <>
         <StoryblokStory story={currentStory} />
-        <Dropdown />
       </>
     );
   } catch (error) {
