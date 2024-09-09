@@ -11,9 +11,15 @@ export default async function StartPage({}) {
     const currentStory = await StoryblokCMS.getStory({ slug: ["home"] });
     if (!currentStory) throw new Error();
 
-    return <StoryblokStory story={currentStory} />;
+    return (
+      <>
+        <StoryblokStory story={currentStory} />
+      </>
+    );
   } catch (error) {
     notFound();
   }
 }
-export const dynamic = StoryblokCMS.isDevelopment ? "force-dynamic" : "force-static";
+export const dynamic = StoryblokCMS.isDevelopment
+  ? "force-dynamic"
+  : "force-static";
