@@ -9,6 +9,8 @@ import RichTextDefault from "@/components/nestable/RichText";
 import ButtonPrimary from "@/components/nestable/ButtonPrimary";
 import ButtonSecondary from "@/components/nestable/ButtonSecondary";
 import ButtonOutlined from "@/components/nestable/ButtonOutlined";
+import ButtonRectangle from "@/components/nestable/ButtonRectangle";
+import Button from "@/components/nestable/Button";
 
 const components = {
   "page": Page,
@@ -16,7 +18,9 @@ const components = {
   "richtext": RichTextDefault,
   "button_primary": ButtonPrimary,
   "button_secondary": ButtonSecondary,
-  "button_outlined": ButtonOutlined
+  "button_outlined": ButtonOutlined,
+  "button_rectangle": ButtonRectangle,
+  "button": Button
 }
 
 storyblokInit({
