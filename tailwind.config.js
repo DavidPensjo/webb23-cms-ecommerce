@@ -16,11 +16,11 @@ module.exports = {
         sans: ["Public Sans", "sans-serif"],
       },
       colors: {
-        fill_primary: "#ff6347",
-        fill_secondary: "#32cd32",
-        fill_bg_primary: "#1e90ff",
-        text_primary: "#333333",
-        text_secondary: "#ffffff",
+        fill_primary: "#0D0D0D",
+        fill_secondary: "#979797",
+        fill_bg_primary: "#EFF2F6",
+        text_primary: "#000000",
+        text_secondary: "#979797",
       },
       fontSize: {
         h1: ["72px", "80px"],
