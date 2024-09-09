@@ -1,3 +1,5 @@
+
+
 //Uses config set global components for the layout
 export default function Layout({ config, children }) {
     //Create at least a header and footer component
@@ -5,7 +7,10 @@ export default function Layout({ config, children }) {
     return (
         <>
             <header></header>
-            <main>{children}</main>
+            <main>{children}
+
+
+            </main>
             <footer></footer>
         </>
     );
