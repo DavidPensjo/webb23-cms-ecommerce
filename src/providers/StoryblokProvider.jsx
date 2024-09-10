@@ -15,6 +15,7 @@ import Dropdown from "@/components/nestable/Dropdown";
 import ImageWithText from "@/components/nestable/ImageWithText";
 import ProductList from "@/components/nestable/ProductList";
 import ShopListHero from "@/components/nestable/ShopListHero";
+import ProductDetail from "@/components/nestable/ProductDetail";
 
 const components = {
   page: Page,
@@ -28,7 +29,8 @@ const components = {
   dropdown: Dropdown,
   image_with_text: ImageWithText,
   product_list: ProductList,
-  shop_list_hero: ShopListHero
+  shop_list_hero: ShopListHero,
+  product_detail: ProductDetail,
 };
 
 storyblokInit({

@@ -37,7 +37,7 @@ module.exports = {
         btnSmall: ["16px", "20px"],
       },
       width: {
-        "default": "1200px",
+        default: "1120px",
       },
     },
   },
