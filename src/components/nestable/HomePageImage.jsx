@@ -1,6 +1,6 @@
 export default function HomePageImage({ blok }) {
     return (
-        <section className="flex flex-col items-center w-full">
+        <section className="flex flex-col items-center w-full pb-12">
             <img 
                 src={blok?.image?.filename} 
                 alt={blok?.image?.alt || 'Teaser Image'} 
