@@ -18,8 +18,6 @@ export async function fetchProducts() {
     cv: new Date().getTime(),
   });
 
-  console.log("Full API Response (Products):", res.data.stories);
-
   return res.data.stories;
 }
 
@@ -30,8 +28,6 @@ export async function fetchProductBySlug(slug) {
     version,
     cv: new Date().getTime(),
   });
-
-  console.log("Full API Response (Product Detail):", res.data.story);
 
   return res.data.story;
 }
