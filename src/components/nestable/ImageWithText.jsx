@@ -2,7 +2,6 @@ import Link from "next/link";
 
 export default function ImageWithText({ blok }) {
   const productUrl = `/products/${blok.slug}`;
-    console.log(blok)
   return (
     <Link href={productUrl}>
       <section className="w-[265px]">
