@@ -16,6 +16,7 @@ import ImageWithText from "@/components/nestable/ImageWithText";
 import ProductList from "@/components/nestable/ProductList";
 import ShopListHero from "@/components/nestable/ShopListHero";
 import CategoryNav from "@/components/nestable/CategoryNav";
+import HomepageHero from "@/components/nestable/HomepageHero";
 
 const components = {
   page: Page,
@@ -31,6 +32,7 @@ const components = {
   product_list: ProductList,
   shop_list_hero: ShopListHero,
   category_nav: CategoryNav,
+  homepage_hero: HomepageHero,
 };
 
 storyblokInit({

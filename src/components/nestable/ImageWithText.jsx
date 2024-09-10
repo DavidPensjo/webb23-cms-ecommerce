@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
 export default function ImageWithText({ blok }) {
-    console.log(blok);
-
     const cardContent = (
         <>
             <img 
