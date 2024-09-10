@@ -36,8 +36,13 @@ module.exports = {
         btnBig: ["18px", "22px"],
         btnSmall: ["16px", "20px"],
       },
+<<<<<<< HEAD
       width: {
         default: "1120px",
+=======
+      maxWidth: {
+        "default": "1120px",
+>>>>>>> 235c5f451db9b0db36ec6ec3287bbffa4839ce29
       },
     },
   },
