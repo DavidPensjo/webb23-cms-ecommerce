@@ -8,9 +8,9 @@ export default function HomepageHero({ blok }) {
                 <h2>
                     {blok?.title}
                 </h2>
-                <p1 className="max-w-[600px]">
+                <p className="text-p1 text-text_secondary max-w-[600px] p-2">
                     {blok?.text}
-                </p1>
+                </p>
                 {/* Add button here if needed */}
             </div>
             <img 
