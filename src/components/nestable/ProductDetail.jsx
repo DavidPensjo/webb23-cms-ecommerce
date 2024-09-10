@@ -2,27 +2,25 @@ import React from "react";
 import Image from "next/image";
 
 const ProductDetail = ({ blok }) => {
-  console.log(blok);
-
   return (
-    <div className="mt-20 flex gap-16 contain">
-      <div className="w-[554px] h-[554px] border">
+    <div className="mt-20 flex flex-col lg:flex-row gap-16 justify-center items-center lg:gap-16 lg:max-w-screen-lg mx-auto"> {/* Added justify-center, items-center, and mx-auto */}
+      <div className="w-full lg:w-[554px] lg:h-[554px]">
         <Image
           src={blok?.image?.filename || ""}
           alt={blok?.image?.alt || blok?.title || "Product image"}
           height={554}
           width={554}
-          className="bg-[#C4C4C4] w-[554px] h-[554px]"
+          className="bg-[#C4C4C4] lg:w-[554px] lg:h-[554px] h-[344px] w-[344px]"
         />
       </div>
-
-      <div className="flex flex-col w-[554px] gap-4">
-        <h3>{blok?.title || "Product Title"}</h3>
+      <div className="flex flex-col w-full lg:w-[554px] gap-4">
+        <h3 className="text-xl lg:text-2xl">
+          {blok?.title || "Product Title"}
+        </h3>
         <p className="text-p2 -mt-3">${blok?.price || "0"}</p>
-        <p className="text-p2 w-[360px]">
+        <p className="text-p2 lg:w-[360px]">
           {blok?.description || "No description available."}
         </p>
-
         <div>
           <p className="text-p2 font-normal opacity-50">Color</p>
           <div className="gap-2 flex pt-2">
@@ -35,7 +33,6 @@ const ProductDetail = ({ blok }) => {
             ))}
           </div>
         </div>
-
         <div>
           <p className="text-p2 font-normal opacity-50">Size</p>
           <div className="flex gap-2 pt-2">
@@ -49,7 +46,6 @@ const ProductDetail = ({ blok }) => {
             ))}
           </div>
         </div>
-
         <p className="text-p4 font-normal underline">Size & Fit Guide</p>
         <p className="text-p4 font-normal opacity-50">
           {blok?.model_info || "Model information not available."}
