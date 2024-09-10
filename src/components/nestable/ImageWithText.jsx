@@ -15,7 +15,7 @@ export default function ImageWithText({ blok }) {
                     <h3 className="text-lg font-bold">{blok?.title}</h3>
                     <p>{blok?.size}</p>
                 </div>
-                <p className="text-gray-700">{blok?.price}</p>
+                <p className="text-gray-700">${blok?.price}</p>
             </div>
         </>
     );

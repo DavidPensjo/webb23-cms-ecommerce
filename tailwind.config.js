@@ -36,8 +36,8 @@ module.exports = {
         btnBig: ["18px", "22px"],
         btnSmall: ["16px", "20px"],
       },
-      width: {
-        "default": "1200px",
+      maxWidth: {
+        "default": "1120px",
       },
     },
   },
