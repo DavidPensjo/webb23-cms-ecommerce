@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from 'react';
 import ArrivalsImage from "./ArrivalsImage";
 import { fetchProducts } from "@/app/lib/storyblok";
@@ -22,7 +21,7 @@ export default function ArrivalsImageGrid({ blok }) {
 
     return (
 <section className="flex flex-col items-center w-full max-w-default">
-  <div className="flex flex-row gap-4 relative mt-32">
+  <div className="flex flex-row gap-4 relative mt-40">
     {products.map((product, index) => (
       <div
         key={index}

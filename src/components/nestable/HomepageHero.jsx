@@ -1,7 +1,5 @@
-import Link from 'next/link';
-
+import ButtonSecondary from "./ButtonSecondary";
 export default function HomepageHero({ blok }) {
-    console.log(blok);
     return (
         <section className="flex flex-col items-center w-full max-w-default">
             <div className="flex flex-col items-center justify-center text-center mb-8 md:mb-0">
@@ -11,12 +9,17 @@ export default function HomepageHero({ blok }) {
                 <p className="text-p1 text-text_secondary max-w-[620px] p-2">
                     {blok?.text}
                 </p>
-                {/* Add button here if needed */}
+                
+
+                {blok.button.map((button, index) => (
+                    <ButtonSecondary key={index} blok={button} />
+                ))}
+
             </div>
-            <img 
-                src={blok?.image?.filename} 
-                alt={blok?.image?.alt || 'Teaser Image'} 
-                className="w-full h-[521px] object-cover py-5"
+            <img
+                src={blok?.image?.filename}
+                alt={blok?.image?.alt || 'Teaser Image'}
+                className="w-full h-[521px] object-cover pt-7"
             />
         </section>
     );
