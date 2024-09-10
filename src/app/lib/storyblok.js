@@ -11,21 +11,27 @@ const Storyblok = new StoryblokClient({
 
 export async function fetchProducts() {
   const version = process.env.NODE_ENV === "production" ? "published" : "draft";
-  
+
   const res = await Storyblok.get("cdn/stories", {
     starts_with: "products/",
     version,
+    cv: new Date().getTime(),
   });
+
+  console.log("Full API Response (Products):", res.data.stories);
 
   return res.data.stories;
 }
 
 export async function fetchProductBySlug(slug) {
   const version = process.env.NODE_ENV === "production" ? "published" : "draft";
-  
+
   const res = await Storyblok.get(`cdn/stories/products/${slug}`, {
     version,
+    cv: new Date().getTime(),
   });
+
+  console.log("Full API Response (Product Detail):", res.data.story);
 
   return res.data.story;
 }
