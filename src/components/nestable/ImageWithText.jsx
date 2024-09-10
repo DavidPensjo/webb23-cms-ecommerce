@@ -10,9 +10,9 @@ export default function ImageWithText({ blok }) {
                 alt={blok?.image?.alt || 'Teaser Image'} 
                 className="w-[265px] h-[265px] object-cover mx-auto"
             />
-            <div className="py-3">
+            <div className="py-2">
                 <div className="flex justify-between">
-                    <h3 className="text-xl font-bold">{blok?.title}</h3>
+                    <h3 className="text-lg font-bold">{blok?.title}</h3>
                     <p>{blok?.size}</p>
                 </div>
                 <p className="text-gray-700">{blok?.price}</p>
