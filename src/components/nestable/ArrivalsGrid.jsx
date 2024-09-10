@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import ImageWithText from "./ImageWithText";
+import ArrivalsImage from "./ArrivalsImage";
 import { fetchProducts } from "@/app/lib/storyblok";
 
-export default function ProductList() {
+export default function ArrivalsHero({ blok }) {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -15,12 +15,13 @@ export default function ProductList() {
         loadProducts();
     }, []);
 
+console.log(products);
 
     return (
-        <section className="flex w-default">
-            <div className="flex flex-wrap gap-5 max-w-screen-xl mx-auto justify-center">
-                {products.map((product, index) => (
-                    <ImageWithText key={index} blok={product.content} />
+        <section className="flex flex-col items-center w-full max-w-default">
+            <div className="flex flex-row gap-4">
+            {products.map((product, index) => (
+                    <ArrivalsImage key={index} blok={product.content} />
                 ))}
             </div>
         </section>
