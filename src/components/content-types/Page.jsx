@@ -4,7 +4,7 @@ import { StoryblokComponent } from "@storyblok/react/rsc";
 export default function Page({ blok }) {
     return (
         <main className="flex flex-col items-center justify-center min-h-[80vh] w-full">
-             <div className="max-w-[1400px] p-4">
+             <div className="flex flex-col items-center max-w-[1400px] p-4 w-full mx-auto">
             {blok?.body?.map((blok) => (
                 <StoryblokComponent blok={blok} key={blok._uid} />
             ))}
