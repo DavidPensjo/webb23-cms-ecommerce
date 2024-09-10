@@ -3,26 +3,26 @@ import Image from "next/image";
 
 const ProductDetail = ({ blok }) => {
   return (
-    <div className="mt-20 flex flex-col lg:flex-row gap-16 justify-center items-center lg:gap-16 lg:max-w-screen-lg mx-auto"> {/* Added justify-center, items-center, and mx-auto */}
-      <div className="w-full lg:w-[554px] lg:h-[554px]">
+    <div className="lg:mt-20 lg:flex-row lg:max-w-screen-lg flex flex-col justify-center mx-auto">
+      <div className="w-full lg:w-[554px] lg:h-[554px] lg:pr-[32px]">
         <Image
           src={blok?.image?.filename || ""}
           alt={blok?.image?.alt || blok?.title || "Product image"}
           height={554}
           width={554}
-          className="bg-[#C4C4C4] lg:w-[554px] lg:h-[554px] h-[344px] w-[344px]"
+          className="bg-[#C4C4C4] lg:w-[554px] lg:h-[554px] object-cover lg:object-center"
         />
       </div>
-      <div className="flex flex-col w-full lg:w-[554px] gap-4">
+      <div className="lg:w-[554px] lg:gap-4 lg:pt-0 lg:pl-[32px] flex flex-col w-full gap-2 pl-8 pt-5 ">
         <h3 className="text-xl lg:text-2xl">
           {blok?.title || "Product Title"}
         </h3>
-        <p className="text-p2 -mt-3">${blok?.price || "0"}</p>
-        <p className="text-p2 lg:w-[360px]">
+        <p className="text-p2 lg:-mt-3">${blok?.price || "0"}</p>
+        <p className="text-p2 lg:w-[360px] lg:pt-0 pt-2">
           {blok?.description || "No description available."}
         </p>
         <div>
-          <p className="text-p2 font-normal opacity-50">Color</p>
+          <p className="text-p2 font-normal opacity-50 lg:pt-0 pt-5">Color</p>
           <div className="gap-2 flex pt-2">
             {blok?.colors?.map((color, index) => (
               <button
@@ -46,7 +46,7 @@ const ProductDetail = ({ blok }) => {
             ))}
           </div>
         </div>
-        <p className="text-p4 font-normal underline">Size & Fit Guide</p>
+        <p className="text-p4 font-normal underline lg:pt-0 pt-10">Size & Fit Guide</p>
         <p className="text-p4 font-normal opacity-50">
           {blok?.model_info || "Model information not available."}
         </p>
