@@ -15,7 +15,6 @@ export default function ProductList() {
         loadProducts();
     }, []);
 
-console.log(products);  // Check the console to see the fetched products
 
     return (
         <section className="flex w-default">
