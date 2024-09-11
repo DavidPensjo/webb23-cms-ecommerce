@@ -6,7 +6,7 @@ const Footer = ({ config }) => {
       <div className="container mx-auto flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-between">
         <div className="space-y-3">
           <div className="h-11">
-            <p className="text-4xl font-semibold">
+            <p className="text-2xl font-semibold md:text-4xl">
               {config.content.message_footer_title}
             </p>
           </div>
