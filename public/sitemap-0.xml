@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://webb23-cms-ecommerce.vercel.app/sitemap.xml</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/robots.txt</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/about</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/products/jacket</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/shop-list-page</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater1</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater2</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater3</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://webb23-cms-ecommerce.vercel.app/config</loc><lastmod>2024-09-11T17:33:36.617Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/sitemap.xml</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/robots.txt</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/about</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/products/jacket</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/shop-list-page</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater1</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater2</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/products/cool-sweater3</loc></url>
+<url><loc>https://webb23-cms-ecommerce.vercel.app/config</loc></url>
 </urlset>
