@@ -14,12 +14,10 @@ export default function Button({ blok }) {
 
 
   return (
-    <Link href={blok?.button_link}>
       <button 
       className={`inline-block mt-4 ${widthClass} ${heightClass} ${fontSizeClass} ${fontWeightClass} font-[Public Sans] rounded-none text-center border border-[#0D0D0D] ${buttonStyle}`}
       >
         {blok?.button_text}
       </button>
-    </Link>
   );
 }
