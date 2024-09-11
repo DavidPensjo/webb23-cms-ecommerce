@@ -18,6 +18,7 @@ import DynamicImage from "@/components/nestable/DynamicImage";
 import ArrivalsImageGrid from "@/components/nestable/ArrivalsImageGrid";
 import Hero from "@/components/nestable/Hero";
 import ImageHandler from "@/components/nestable/ImageHandler";
+import Product from "@/components/nestable/Product";
 
 const components = {
   page: Page,
@@ -35,6 +36,7 @@ const components = {
   info: Info,
   hero: Hero,
   image_handler: ImageHandler,
+  product: Product,
 };
 
 storyblokInit({
