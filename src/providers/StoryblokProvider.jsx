@@ -21,6 +21,7 @@ import HomePageHero from "@/components/nestable/HomePageHero";
 import HomePageImage from "@/components/nestable/HomePageImage";
 import ArrivalsHero from "@/components/nestable/ArrivalsHero";
 import ArrivalsImageGrid from "@/components/nestable/ArrivalsImageGrid";
+import Hero from "@/components/nestable/Hero";
 
 const components = {
   page: Page,
@@ -41,6 +42,7 @@ const components = {
   homepage_image: HomePageImage,
   arrivals_hero: ArrivalsHero,
   arrivals_image_grid: ArrivalsImageGrid,
+  hero: Hero,
 };
 
 storyblokInit({
