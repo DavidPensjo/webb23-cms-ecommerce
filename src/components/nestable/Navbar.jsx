@@ -25,7 +25,7 @@ const Navbar = ({ config }) => {
             </button>
           </div>
           <Link href="/">
-            <p className="font-bold cursor-pointer">{config.content.logo}</p>
+            <img src={config.content.logo} className="cursor-pointer"></img>
           </Link>
 
           <div className="hidden md:flex items-center space-x-9">
