@@ -14,7 +14,7 @@ const Navbar = ({ config }) => {
   return (
     <div className="border-b border-fill_primary h-2/6 px-4">
       <div className="container mx-auto flex h-11 items-center justify-between max-w-default">
-        <div className="flex items-center space-x-9">
+        <div className="flex items-center gap-4">
           <div className="md:hidden">
             <button onClick={toggleMenu}>
               <img

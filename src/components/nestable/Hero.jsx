@@ -26,6 +26,7 @@ const paragraphColors = {
 };
 
 export default function Hero({ blok }) {
+    console.log(blok);
 
     const heroAlignment = blok.hero_alignment || 'center';
 
@@ -46,13 +47,14 @@ export default function Hero({ blok }) {
     const titleColorClass = headingColors[blok.title_color] || headingColors.text_primary;
     const textSizeClass = paragraphSizes[blok.text_size] || paragraphSizes.p1;
     const textColorClass = paragraphColors[blok.text_color] || paragraphColors.text_secondary;
-
+    const backgroundColor = blok.background_color?.value || '#fff';
     const buttonArray = Array.isArray(blok.buttons) ? blok.buttons : [];
 
     const textFieldWidth = blok.text_field_width ? `${blok.text_field_width}px` : '';
 
     return (
-        <section className={sectionAlignmentClass}>
+        <section className={sectionAlignmentClass}
+            style={{ backgroundColor }}>
             <div className={contentAlignmentClass}>
 
                 <h2 className={`${titleSizeClass} ${titleColorClass} ${blok.title_font_weight || ''} py-2`}>
@@ -60,7 +62,10 @@ export default function Hero({ blok }) {
                 </h2>
 
 
-                <p className={`${textSizeClass} ${textColorClass} ${blok.text_font_weight || ''} max-w-[${textFieldWidth}] py-2`}>
+                <p
+                    className={`${textSizeClass} ${textColorClass} ${blok.text_font_weight || ''} py-2`}
+                    style={{ maxWidth: textFieldWidth }}
+                >
                     {blok.text}
                 </p>
 
