@@ -1,14 +1,16 @@
 import { fetchProductBySlug } from "@/app/lib/storyblok";
-import ProductDetail from "@/components/nestable/ProductDetail";
+import Product from "@/components/content-types/Product";
 
 
 export default async function ProductDetailPage({ params }) {
   const { slug } = params;
   const product = await fetchProductBySlug(slug);
 
+  console.log(product)
+
   return (
       <div className="w-full flex justify-center">
-        <ProductDetail blok={product.content} />
+        <Product blok={product.content} />
       </div>
   );
 }
