@@ -10,7 +10,7 @@ const Footer = ({ config }) => {
               {config.content.message_footer_title}
             </p>
           </div>
-          <div className="h-8 w-96">
+          <div className="h-8 max-w-96">
             <p className="text-sm">{config.content.message_footer}</p>
           </div>
           <div className="flex flex-col space-y-2 pt-4">

@@ -21,9 +21,12 @@ import HomePageHero from "@/components/nestable/HomePageHero";
 import HomePageImage from "@/components/nestable/HomePageImage";
 import ArrivalsHero from "@/components/nestable/ArrivalsHero";
 import ArrivalsImageGrid from "@/components/nestable/ArrivalsImageGrid";
+import About from "@/components/content-types/About";
+import Info from "@/components/nestable/Info";
 
 const components = {
   page: Page,
+  about: About,
   teaser: Teaser,
   richtext: RichTextDefault,
   button_primary: ButtonPrimary,
@@ -41,6 +44,7 @@ const components = {
   homepage_image: HomePageImage,
   arrivals_hero: ArrivalsHero,
   arrivals_image_grid: ArrivalsImageGrid,
+  info: Info,
 };
 
 storyblokInit({
