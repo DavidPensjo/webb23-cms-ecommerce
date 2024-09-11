@@ -39,8 +39,8 @@ export default function Hero({ blok }) {
 
     const alignmentClasses = {
         left: {
-            section: 'flex w-full lg:justify-start justify-center max-w-default gap-5 mt-5',
-            content: 'w-full md:w-1/2 pr-0 flex flex-col lg:justify-start justify-center mb-8 md:mb-0'
+            section: 'flex flex-col items-center text-center lg:justify-start lg:text-left lg:items-start xl:flex-row w-full max-w-default gap-5 mt-5',
+            content: 'flex flex-col items-center text-center lg:justify-start lg:text-left lg:items-start md:w-1/2 pr-0 mb-8 md:mb-0'
         },
 
         center: {
