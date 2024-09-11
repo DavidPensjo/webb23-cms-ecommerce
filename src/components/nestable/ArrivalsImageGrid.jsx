@@ -21,16 +21,17 @@ export default function ArrivalsImageGrid({ blok }) {
 
     return (
 <section className="flex flex-col items-center w-full max-w-default">
-  <div className="flex flex-row gap-4 relative mt-40">
+  <div className="grid grid-cols-1 gap-4 mt-40 sm:grid-cols-2 lg:grid-cols-3">
     {products.map((product, index) => (
       <div
         key={index}
-        className={`relative ${index === 1 ? 'translate-y-[-20%]' : ''}`}
+        className={`relative ${index === 1 ? 'lg:translate-y-[-20%]' : ''}`}
       >
         <ArrivalsImage blok={product.content} />
       </div>
     ))}
   </div>
 </section>
+
     );
 }
