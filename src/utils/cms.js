@@ -2,9 +2,11 @@ import { getStoryblokApi } from "@storyblok/react/rsc";
 export class StoryblokCMS {
   static IS_PROD = process.env.NODE_ENV === "production";
   static IS_DEV = process.env.NODE_ENV === "development";
+  static TOKEN = this.IS_PROD
+  ? process.env.NEXT_PUBLIC_PRODUCTION_STORYBLOK_TOKEN
+  : process.env.NEXT_PUBLIC_PREVIEW_STORYBLOK_TOKEN;
+  
   static VERSION = this.IS_PROD ? "published" : "draft";
-  static TOKEN = process.env.NEXT_PUBLIC_PREVIEW_STORYBLOK_TOKEN;
-
   static async sbGet(path, params) {
     return getStoryblokApi().get(path, params);
   }
@@ -13,10 +15,7 @@ export class StoryblokCMS {
     if (!params) return {};
     const uri = params?.slug?.join("/");
     const storyUrl = "cdn/stories/" + uri;
-    const { data } = await this.sbGet(
-      storyUrl,
-      this.getDefaultSBParams()
-    );
+    const { data } = await this.sbGet(storyUrl, this.getDefaultSBParams());
     return data.story;
   }
 
