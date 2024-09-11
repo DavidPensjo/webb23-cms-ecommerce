@@ -14,12 +14,9 @@ import Button from "@/components/nestable/Button";
 import Dropdown from "@/components/nestable/Dropdown";
 import ImageWithText from "@/components/nestable/ImageWithText";
 import ProductList from "@/components/nestable/ProductList";
-import ShopListHero from "@/components/nestable/ShopListHero";
 import CategoryNav from "@/components/nestable/CategoryNav";
 import ProductDetail from "@/components/nestable/ProductDetail";
-import HomePageHero from "@/components/nestable/HomePageHero";
 import HomePageImage from "@/components/nestable/HomePageImage";
-import ArrivalsHero from "@/components/nestable/ArrivalsHero";
 import ArrivalsImageGrid from "@/components/nestable/ArrivalsImageGrid";
 import Hero from "@/components/nestable/Hero";
 
@@ -35,12 +32,9 @@ const components = {
   dropdown: Dropdown,
   image_with_text: ImageWithText,
   product_list: ProductList,
-  shop_list_hero: ShopListHero,
   category_nav: CategoryNav,
   product_detail: ProductDetail,
-  homepage_hero: HomePageHero,
   homepage_image: HomePageImage,
-  arrivals_hero: ArrivalsHero,
   arrivals_image_grid: ArrivalsImageGrid,
   hero: Hero,
 };

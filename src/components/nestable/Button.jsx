@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Button({ blok }) {
   // Determine the button style based on the Storyblok value
   const buttonStyle = blok?.button_style === 'black'
