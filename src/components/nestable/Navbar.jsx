@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SearchBar from "@/components/nestable/SearchBar";
 
 const Navbar = ({ config }) => {
   return (
@@ -28,12 +29,7 @@ const Navbar = ({ config }) => {
             <p className=" cursor-pointer">About</p>
           </Link>
           <div>
-            <img
-              src={config.content.search_icon}
-              className="w-4 h-4"
-              alt="Search Icon"
-            ></img>
-            <div>{/* SEARCH FUNCTION HERE */}</div>
+            <SearchBar></SearchBar>
           </div>
         </div>
         <div className="flex items-center space-x-6">

@@ -17,7 +17,7 @@ import ProductList from "@/components/nestable/ProductList";
 import ShopListHero from "@/components/nestable/ShopListHero";
 import CategoryNav from "@/components/nestable/CategoryNav";
 import ProductDetail from "@/components/nestable/ProductDetail";
-import HomePageHero from "@/components/nestable/HomePageHero";
+import HomePageHero from "@/components/nestable/HomePageHero"; //Was called HomepageHero, Changed name to HomePageHero. Had to add this comment to push change. Might be reason Vercel build failed.
 import HomePageImage from "@/components/nestable/HomePageImage";
 import ArrivalsHero from "@/components/nestable/ArrivalsHero";
 import ArrivalsImageGrid from "@/components/nestable/ArrivalsImageGrid";
