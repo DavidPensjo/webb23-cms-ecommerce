@@ -6,17 +6,4 @@ module.exports = {
   changefreq: 'daily', 
   priority: 0.7, 
   generateIndexSitemap: true, 
-  transform: async (config, path) => {
-    return {
-      loc: path, 
-    };
-  },
-  additionalPaths: async (config) => [
-   
-    {
-      loc: '/products/123', 
-      changefreq: 'daily',
-      priority: 0.7,
-    },
-  ],
 };
