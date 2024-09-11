@@ -4,15 +4,15 @@ export default function ImageWithText({ blok }) {
   const productUrl = `/products/${blok.slug}`;
   return (
     <Link href={productUrl}>
-      <section className="w-[265px]">
+      <section className="lg:w-[265px] lg:block flex ">
         <img
           src={blok?.image?.filename}
           alt={blok?.image?.alt || "Teaser Image"}
-          className="w-[265px] h-[265px] object-cover mx-auto"
+          className="lg:w-[265px] lg:h-[265px] lg:object-cover lg:mx-auto w-[130px] h-[130px] object-cover mx-auto"
         />
-        <div className="p-1">
-          <div className="flex justify-between">
-            <h3 className="text-xl font-bold mb-2">{blok?.title}</h3>
+        <div className="lg:p-1">
+          <div className="lg:flex lg:justify-between">
+            <h3 className="text-xl font-bold lg:mb-2">{blok?.title}</h3>
             <p>{blok?.size}</p>
           </div>
           <p className="text-gray-700">{blok?.price}</p>
