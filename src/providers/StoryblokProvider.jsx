@@ -11,13 +11,13 @@ import Dropdown from "@/components/nestable/Dropdown";
 import ImageWithText from "@/components/nestable/ImageWithText";
 import ProductList from "@/components/nestable/ProductList";
 import CategoriesNav from "@/components/nestable/CategoriesNav";
-import ProductDetail from "@/components/nestable/ProductDetail";
 import About from "@/components/content-types/About";
 import Info from "@/components/nestable/Info";
 import DynamicImage from "@/components/nestable/DynamicImage";
 import ArrivalsImageGrid from "@/components/nestable/ArrivalsImageGrid";
 import Hero from "@/components/nestable/Hero";
 import ImageHandler from "@/components/nestable/ImageHandler";
+import Product from "@/components/content-types/Product";
 
 const components = {
   page: Page,
@@ -29,12 +29,12 @@ const components = {
   image_with_text: ImageWithText,
   product_list: ProductList,
   categories_nav: CategoriesNav,
-  product_detail: ProductDetail,
   dynamic_image: DynamicImage,
   arrivals_image_grid: ArrivalsImageGrid,
   info: Info,
   hero: Hero,
   image_handler: ImageHandler,
+  Product,
 };
 
 storyblokInit({

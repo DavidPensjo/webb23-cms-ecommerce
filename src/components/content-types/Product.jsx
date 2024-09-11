@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const ProductDetail = ({ blok }) => {
+const Product = ({ blok }) => {
   return (
     <div className="lg:mt-20 lg:flex-row lg:max-w-screen-lg flex flex-col justify-center mx-auto">
       <div className="w-full lg:w-[554px] lg:h-[554px] lg:pr-[32px]">
@@ -55,4 +55,4 @@ const ProductDetail = ({ blok }) => {
   );
 };
 
-export default ProductDetail;
+export default Product;
