@@ -25,9 +25,9 @@ const paragraphColors = {
     text_secondary: 'text-text_secondary',
 };
 
-export default function HomepageHero({ blok }) {
+export default function Hero({ blok }) {
 
-    const heroAlignment = blok.hero_alignment || 'center'; 
+    const heroAlignment = blok.hero_alignment || 'center';
 
     const alignmentClasses = {
         left: {
@@ -65,7 +65,7 @@ export default function HomepageHero({ blok }) {
                 </p>
 
 
-          
+
                 {buttonArray.length > 0 && (
                     <div className="flex flex-wrap gap-4">
                         {buttonArray.map((button, index) => {
@@ -80,13 +80,13 @@ export default function HomepageHero({ blok }) {
                 )}
 
             </div>
-            {/* {blok.image && (
+            {blok.image?.filename && (
                 <img
-                    src={typeof blok.image.filename === 'string' ? blok.image.filename : ''}
-                    alt={typeof blok.image.alt === 'string' ? blok.image.alt : 'Teaser Image'}
+                    src={blok.image.filename}
+                    alt={blok.image.alt || ''}
                     className="w-full h-[521px] object-cover pt-7"
                 />
-            )} */}
+            )}
         </section>
     );
 }
