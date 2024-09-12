@@ -1,6 +1,13 @@
 import Button from "./Button";
 import Link from "next/link";
 
+const sectionPaddings = {
+    none: 'p-0',
+    small: 'p-2',
+    medium: 'p-5',
+    large: 'p-10',
+};
+
 const headingSizes = {
     h1: 'text-h1',
     h2: 'text-h2',
@@ -32,17 +39,19 @@ export default function Hero({ blok }) {
 
     const alignmentClasses = {
         left: {
-            section: 'flex w-full lg:justify-start justify-center max-w-default mt-5',
-            content: 'w-full md:w-1/2 pr-0 flex flex-col lg:justify-start justify-center mb-8 md:mb-0'
+            section: 'flex flex-col items-center text-center lg:justify-start lg:text-left lg:items-start xl:flex-row w-full max-w-default gap-5 mt-5',
+            content: 'flex flex-col items-center text-center lg:justify-start lg:text-left lg:items-start md:w-1/2 pr-0 mb-8 md:mb-0'
         },
+
         center: {
-            section: 'flex flex-col items-center w-full max-w-default',
+            section: 'flex flex-col items-center w-full max-w-default gap-5 mt-5',
             content: 'flex flex-col items-center justify-center text-center mb-8 md:mb-0'
         }
     };
 
     const { section: sectionAlignmentClass, content: contentAlignmentClass } = alignmentClasses[heroAlignment] || alignmentClasses.center;
 
+    const sectionPaddingClass = sectionPaddings[blok.hero_padding] || sectionPaddings;
     const titleSizeClass = headingSizes[blok.title_size] || headingSizes.h2;
     const titleColorClass = headingColors[blok.title_color] || headingColors.text_primary;
     const textSizeClass = paragraphSizes[blok.text_size] || paragraphSizes.p1;
@@ -53,7 +62,7 @@ export default function Hero({ blok }) {
     const textFieldWidth = blok.text_field_width ? `${blok.text_field_width}px` : '';
 
     return (
-        <section className={sectionAlignmentClass}
+        <section className={`${sectionAlignmentClass} ${sectionPaddingClass}`}
             style={{ backgroundColor }}>
             <div className={contentAlignmentClass}>
 
@@ -85,13 +94,15 @@ export default function Hero({ blok }) {
                 )}
 
             </div>
+
             {blok.image?.filename && (
                 <img
                     src={blok.image.filename}
                     alt={blok.image.alt || ''}
-                    className="w-full h-[521px] object-cover pt-7"
+                    className="w-full h-[521px] object-cover"
                 />
             )}
+
         </section>
     );
 }
