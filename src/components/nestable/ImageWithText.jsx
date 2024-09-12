@@ -18,8 +18,8 @@ export default function ImageWithText({ blok }) {
             className="bg-[#f6f6f6] sm:w-[265px] w-full h-[265px] object-contain mx-auto border-t-2 border-gray-400 sm:border-t-0"
             src={image}
             alt={blok?.image?.alt || "Product Image"}
-            width={300}
-            height={300}
+            width={150}
+            height={150}
           />
           <div className="absolute inset-0 bg-black opacity-0 sm:group-hover:opacity-40 transition-opacity duration-200"></div>
         </div>
