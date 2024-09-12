@@ -25,13 +25,16 @@ const Navbar = ({ config }) => {
             </button>
           </div>
           <Link href="/home">
-            <img src={config.content.logo} className="cursor-pointer"></img>
+            <img
+              src={config.content.logo}
+              className="cursor-pointer md:py-0.5 md:pr-4"
+            ></img>
           </Link>
 
           <div className="hidden md:flex items-center space-x-9">
             <div className="relative group">
               <Link href="/shop-list-page">
-                <p className="cursor-pointer">Products</p>
+                <p className="cursor-pointer md:pt-0.5">Products</p>
               </Link>
               <div className="bg-white border border-fill_primary absolute left-0 mt-4 p-4 rounded shadow-lg z-10 transition-all ease-in-out duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                 <div>
@@ -49,7 +52,7 @@ const Navbar = ({ config }) => {
               </div>
             </div>
             <Link href="/about">
-              <p className=" cursor-pointer">About</p>
+              <p className="cursor-pointer md:pt-0.5">About</p>
             </Link>
             <SearchBar />
           </div>

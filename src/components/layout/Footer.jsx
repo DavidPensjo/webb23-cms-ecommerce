@@ -22,36 +22,38 @@ const Footer = ({ config }) => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full lg:w-1/2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-1/2">
           <div>
             <p>Shop</p>
             <ul className="text-fill_secondary">
-              <li>Women’s</li>
-              <li>Men’s</li>
-              <li>Kids’ Shoes</li>
-              <li>Equipment</li>
-              <li>By Activity</li>
-              <li>Gift Cards</li>
-              <li>Sale</li>
+              <li className="cursor-pointer max-w-20">Women’s</li>
+              <li className="cursor-pointer max-w-12">Men’s</li>
+              <li className="cursor-pointer max-w-24">Kids’ Shoes</li>
+              <li className="cursor-pointer max-w-24">Equipment</li>
+              <li className="cursor-pointer max-w-24">By Activity</li>
+              <li className="cursor-pointer max-w-20">Gift Cards</li>
+              <li className="cursor-pointer max-w-10">Sale</li>
             </ul>
           </div>
           <div>
             <p>Help</p>
             <ul className="text-fill_secondary">
-              <li>Help Center</li>
-              <li>Order Status</li>
-              <li>Size Chart</li>
-              <li>Returns & Warranty</li>
-              <li>Contact Us</li>
+              <li className="cursor-pointer max-w-24">Help Center</li>
+              <li className="cursor-pointer max-w-24">Order Status</li>
+              <li className="cursor-pointer max-w-20">Size Chart</li>
+              <li className="cursor-pointer max-w-40">Returns & Warranty</li>
+              <li className="cursor-pointer max-w-24">Contact Us</li>
             </ul>
           </div>
           <div>
             <p>About</p>
             <ul className="text-fill_secondary">
-              <li>About Us</li>
-              <li>Responsibility</li>
-              <li>Technology & Innovation</li>
-              <li>Explore Our Stories</li>
+              <li className="cursor-pointer max-w-20">About Us</li>
+              <li className="cursor-pointer max-w-28">Responsibility</li>
+              <li className="cursor-pointer max-w-48">
+                Technology & Innovation
+              </li>
+              <li className="cursor-pointer max-w-40">Explore Our Stories</li>
             </ul>
           </div>
         </div>
