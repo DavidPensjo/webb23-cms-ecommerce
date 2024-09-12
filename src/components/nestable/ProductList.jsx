@@ -18,7 +18,7 @@ export default function ProductList() {
 
     return (
         <section className="flex w-default">
-            <div className="flex flex-wrap gap-5 max-w-screen-xl mx-auto justify-center">
+            <div className="sm:flex sm:flex-wrap sm:gap-5 sm:max-w-screen-xl sm:mx-auto sm:justify-center">
                 {products.map((product, index) => (
                     <ImageWithText key={index} blok={product.content} />
                 ))}
