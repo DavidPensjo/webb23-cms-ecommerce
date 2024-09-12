@@ -67,8 +67,8 @@ const Reviews = () => {
           </div>
           <p className="lg:w-[684px] w-[350px] text-p3 pt-5">
             This chair is a disaster from start to finish. The design is far
-            from elegant—it's bulky and awkward to fit into my space. The height
-            adjustment feature is frustratingly difficult to use, and it doesn't
+            from elegant—its bulky and awkward to fit into my space. The height
+            adjustment feature is frustratingly difficult to use, and it doesnt
             offer enough range. It feels flimsy and cheap, and after just a few
             weeks, the chair started showing signs of wear and tear. The build
             quality is severely lacking, and I doubt it will last much longer.
