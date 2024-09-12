@@ -24,7 +24,7 @@ const Navbar = ({ config }) => {
               />
             </button>
           </div>
-          <Link href="/">
+          <Link href="/home">
             <img src={config.content.logo} className="cursor-pointer"></img>
           </Link>
 
