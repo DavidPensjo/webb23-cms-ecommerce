@@ -12,7 +12,7 @@ const Product = ({ blok }) => {
           alt={blok?.image?.alt || blok?.title || "Product image"}
           height={554}
           width={554}
-          className="bg-[#C4C4C4] lg:w-[554px] lg:h-[554px] object-cover lg:object-center"
+          className="bg-[#f6f6f6] lg:bg-white lg:w-[554px] lg:h-[554px] object-cover lg:object-center"
         />
       </div>
       <div className="lg:w-[554px] lg:gap-4 lg:pt-0 lg:pl-[32px] flex flex-col w-full gap-2 pl-8 pt-5 ">

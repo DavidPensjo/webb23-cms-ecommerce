@@ -18,7 +18,8 @@ export default function ProductList() {
         }
         loadProducts();
     }, [selectedCategory]); 
-
+    console.log(products);
+    
     return (
         <section className="flex w-default">
             <div className="sm:flex sm:flex-wrap sm:gap-5 sm:max-w-screen-xl sm:mx-auto sm:justify-center">
