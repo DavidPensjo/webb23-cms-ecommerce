@@ -28,6 +28,7 @@ const Navbar = ({ config }) => {
             <img
               src={config.content.logo}
               className="cursor-pointer md:py-0.5 md:pr-4"
+              alt="Logo"
             ></img>
           </Link>
 
