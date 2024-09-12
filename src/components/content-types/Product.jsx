@@ -62,7 +62,7 @@ const Product = ({ blok }) => {
             </p>
           </div>
           <div className="ml-8">
-            <button className="w-[160px] h-[50px] bg-white text-black hover:bg-black hover:text-white border-2 border-black">Purchase</button>
+            <button className="w-[160px] h-[50px] bg-white text-black hover:bg-black hover:text-white border-2 border-black font-semibold">Add to cart</button>
           </div>
         </div>
       </div>
