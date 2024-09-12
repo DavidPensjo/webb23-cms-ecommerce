@@ -5,7 +5,6 @@ import { storyblokEditable } from "@storyblok/react";
 const Product = ({ blok }) => {
   return (
     <div
-      {...storyblokEditable(blok)}
       className="lg:mt-20 lg:flex-row lg:max-w-screen-lg flex flex-col justify-center mx-auto"
     >
       <div className="w-full lg:w-[554px] lg:h-[554px] lg:pr-[32px]">
