@@ -18,7 +18,9 @@ export default function ImageWithText({ blok }) {
         />
         <div className="sm:p-1 w-[130px] h-[130px] pl-3 sm:block flex flex-col justify-between">
           <div className="sm:flex sm:justify-between sm:w-[260px]">
-            <h3 className="text-xl font-bold sm:mb-2">{blok?.title}</h3>
+            <h3 className="text-xl font-bold sm:mb-2">
+              {blok?.title?.length > 10 ? `${blok.title.substring(0, 17)}` : blok.title}
+            </h3>
             <div className="bg-gray-100 px-1 inline-block h-6 mt-1">
               <p className="font-semibold text-black opacity-60 w-full">
                 {sizeRange}

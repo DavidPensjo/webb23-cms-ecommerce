@@ -1,4 +1,4 @@
-export default function Button({ blok }) {
+export default function Button({ blok, onClick }) {
 
   const buttonStyle = blok?.button_style === 'black'
     ? 'bg-black text-white hover:bg-white hover:text-black'
@@ -16,6 +16,7 @@ export default function Button({ blok }) {
     <button 
       className={`inline-block mt-4 ${fontWeightClass} font-[Public Sans] rounded-none text-center border border-[#0D0D0D] ${buttonStyle}`}
       style={dynamicStyles}
+      onClick={onClick}
     >
       {blok?.button_text}
     </button>
