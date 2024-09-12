@@ -19,6 +19,7 @@ import Hero from "@/components/nestable/Hero";
 import ImageHandler from "@/components/nestable/ImageHandler";
 import Product from "@/components/content-types/Product";
 import Grid from "@/components/nestable/Grid";
+import Reviews from "@/components/nestable/Reviews";
 
 const components = {
   page: Page,
@@ -36,6 +37,7 @@ const components = {
   hero: Hero,
   image_handler: ImageHandler,
   grid: Grid,
+  reviews: Reviews,
   Product,
 };
 
