@@ -10,7 +10,7 @@ export default function ImageWithText({ blok }) {
 
   return (
     <Link href={productUrl}>
-      <section className="sm:w-[265px] sm:block flex justify-around w-[400px] pb-8">
+      <section className="sm:w-[265px] sm:block flex justify-around w-[400px] sm:pb-0 pb-8">
         <img
           src={blok?.image?.filename}
           alt={blok?.image?.alt || "Teaser Image"}
