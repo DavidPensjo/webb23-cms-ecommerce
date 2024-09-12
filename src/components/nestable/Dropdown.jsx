@@ -25,11 +25,10 @@ function Dropdown({ blok }) {
     updateSelectWidth();
   }, []);
 
-
   return (
     <div
       {...storyblokEditable(blok)}
-      className="border-[#1C275A] border-[1px] h-[37px] w-max flex"
+      className="border-black border h-[38px] w-max flex mt-[14px]"
     >
       <div className="flex items-center mx-[13px]">
         <label
