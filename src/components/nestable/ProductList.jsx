@@ -3,23 +3,21 @@
 import { useEffect, useState } from 'react';
 import ImageWithText from "./ImageWithText";
 import { fetchProductsByCategory, fetchProducts } from "@/app/lib/storyblok";
-import { useCategory } from '../../context/CategoryContext'; // Import the context hook
+import { useCategory } from '../../context/CategoryContext'; 
 
 export default function ProductList() {
     const { selectedCategory } = useCategory();
     const [products, setProducts] = useState([]);
 
-console.log(products);
-
     useEffect(() => {
         async function loadProducts() {
             const fetchedProducts = selectedCategory
                 ? await fetchProductsByCategory(selectedCategory)
-                : await fetchProducts(); // Default fetch all products
+                : await fetchProducts(); 
             setProducts(fetchedProducts);
         }
         loadProducts();
-    }, [selectedCategory]); // Re-fetch when selectedCategory changes
+    }, [selectedCategory]); 
 
     return (
         <section className="flex w-default min-h-[80vh]">
