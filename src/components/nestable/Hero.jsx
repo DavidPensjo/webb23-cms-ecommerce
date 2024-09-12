@@ -33,7 +33,7 @@ const paragraphColors = {
 };
 
 export default function Hero({ blok }) {
-    console.log(blok);
+
 
     const heroAlignment = blok.hero_alignment || 'center';
 

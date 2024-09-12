@@ -31,3 +31,31 @@ export async function fetchProductBySlug(slug) {
 
   return res.data.story;
 }
+
+export async function fetchProductsByCategory(slug) {
+  const version = process.env.NODE_ENV === "production" ? "published" : "draft";
+
+  try {
+    const res = await Storyblok.get('cdn/stories', {
+      starts_with: 'products/',
+      version,
+      cv: new Date().getTime(),
+    });
+
+    if (!res.data || !res.data.stories) {
+      throw new Error('No stories found in response');
+    }
+
+    const filteredProducts = res.data.stories.filter((product) =>
+      product.content.category?.[0]?.value?.includes(slug)
+    );
+
+    return filteredProducts;
+  } catch (error) {
+    console.error('Error fetching products by category:', error.message);
+    return [];
+  }
+}
+
+
+
