@@ -112,7 +112,7 @@ const SearchBar = () => {
     <div className="relative flex items-center">
       <Search
         onClick={toggleSearchBar}
-        className="cursor-pointer text-gray-500"
+        className="cursor-pointer text-gray-700 hover:text-fill_secondary"
         size={24}
         ref={searchIconRef}
       />

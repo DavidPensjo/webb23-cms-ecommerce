@@ -27,7 +27,7 @@ const Navbar = ({ config }) => {
           <Link href="/home">
             <img
               src={config.content.logo}
-              className="cursor-pointer md:py-0.5 md:pr-4"
+              className="cursor-pointer md:py-0.5 md:pr-4 hover:opacity-60"
               alt="Logo"
             ></img>
           </Link>
@@ -35,7 +35,7 @@ const Navbar = ({ config }) => {
           <div className="hidden md:flex items-center space-x-9">
             <div className="relative group">
               <Link href="/shop-list-page">
-                <p className="cursor-pointer md:pt-0.5">Products</p>
+                <p className="cursor-pointer md:pt-0.5 hover:text-fill_secondary">Products</p>
               </Link>
               <div className="bg-white border border-fill_primary absolute left-0 mt-4 p-4 rounded shadow-lg z-10 transition-all ease-in-out duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                 <div>
@@ -53,7 +53,7 @@ const Navbar = ({ config }) => {
               </div>
             </div>
             <Link href="/about">
-              <p className="cursor-pointer md:pt-0.5">About</p>
+              <p className="cursor-pointer md:pt-0.5 hover:text-fill_secondary">About</p>
             </Link>
             <SearchBar />
           </div>
@@ -62,7 +62,7 @@ const Navbar = ({ config }) => {
         <div className="flex items-center space-x-6">
           <img
             src={config.content.cart_icon}
-            className="w-9 h-5"
+            className="w-9 h-5 cursor-pointer"
             alt="Cart Icon"
           />
         </div>

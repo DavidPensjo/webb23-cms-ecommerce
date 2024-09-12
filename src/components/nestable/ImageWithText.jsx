@@ -21,7 +21,7 @@ export default function ImageWithText({ blok }) {
             width={150}
             height={150}
           />
-          <div className="absolute inset-0 bg-black opacity-0 sm:group-hover:opacity-40 transition-opacity duration-200"></div>
+          <div className="sm:w-[265px] absolute inset-0 bg-black opacity-0 sm:group-hover:opacity-5 transition-opacity duration-200"></div>
         </div>
 
         <div className="p-1 w-full h-full sm:h-[130px] sm:pt-0 pt-2 relative z-10">

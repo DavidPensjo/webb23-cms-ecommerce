@@ -4,7 +4,7 @@ import { Star, StarHalf } from "lucide-react";
 const Reviews = () => {
   return (
     <div className="w-full flex justify-center mt-52 mb-24">
-      <div className="sm:w-[823px] w-[340px]">
+      <div className="lg:w-[823px] w-[340px]">
         <h3 className=" mb-4">Reviews</h3>
         <div className="">
           <div className="flex justify-between pt-16">
@@ -28,7 +28,7 @@ const Reviews = () => {
             <h4 className="relative">Amazing and durable</h4>
             <div className="font-bold text-sm">Ryan M</div>
           </div>
-          <p className="sm:w-[684px] w-[350px] text-p3 pt-5">
+          <p className="lg:w-[684px] w-[350px] text-p3 pt-5">
             I am very happy with this chair. The design is elegant and the
             height adjustment feature is easy to use (though I would love
             something with a bit more height range). It is well built and seems
@@ -65,7 +65,7 @@ const Reviews = () => {
             <h4 className="relative">Horrible durability</h4>
             <div className="font-bold text-sm">Bryan M</div>
           </div>
-          <p className="sm:w-[684px] w-[350px] text-p3 pt-5">
+          <p className="lg:w-[684px] w-[350px] text-p3 pt-5">
             This chair is a disaster from start to finish. The design is far
             from elegant—it's bulky and awkward to fit into my space. The height
             adjustment feature is frustratingly difficult to use, and it doesn't
