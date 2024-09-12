@@ -4,9 +4,9 @@ import Image from "next/image";
 const Product = ({ blok }) => {
   return (
     <div
-      className="lg:mt-20 lg:flex-row lg:max-w-screen-lg flex flex-col justify-center mx-auto"
+      className="lg:mt-20 lg:flex-row lg:max-w-screen-lg flex flex-col justify-center mx-auto mb-20"
     >
-      <div className="w-full lg:w-[554px] lg:h-[554px] lg:pr-[32px]">
+      <div className="w-full lg:w-[554px] lg:h-[554px] lg:pr-[32px] sm:m-4">
         <Image
           src={blok?.image?.filename || ""}
           alt={blok?.image?.alt || blok?.title || "Product image"}
