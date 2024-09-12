@@ -18,15 +18,12 @@ export default function ProductList() {
     }
     loadProducts();
   }, [selectedCategory]);
-  console.log(products);
 
   return (
     <section className="flex">
       <div className="sm:flex sm:flex-wrap sm:gap-5 max-w-screen-xl mx-auto justify-center w-full">
-        {products.map((product, index) => (
-          <>
-            <ImageWithText key={index} blok={product.content} />
-          </>
+        {products.map((product) => (
+          <ImageWithText key={product.uuid} blok={product.content} />
         ))}
       </div>
     </section>

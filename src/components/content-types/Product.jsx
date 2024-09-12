@@ -1,10 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Reviews from "../nestable/Reviews";
-import Button from "../nestable/Button";
 
 const Product = ({ blok }) => {
-  console.log(blok);
 
   return (
     <div>

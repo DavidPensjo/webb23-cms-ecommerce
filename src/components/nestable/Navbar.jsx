@@ -24,7 +24,7 @@ const Navbar = ({ config }) => {
               />
             </button>
           </div>
-          <Link href="/home">
+          <Link href="/">
             <img
               src={config.content.logo}
               className="cursor-pointer md:py-0.5 md:pr-4 hover:opacity-60"

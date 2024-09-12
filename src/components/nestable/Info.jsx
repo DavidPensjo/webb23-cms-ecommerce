@@ -7,11 +7,11 @@ const Info = ({ blok }) => {
         <p className="text-h2 font-semibold mb-8 mt-28">{blok.title}</p>
       </div>
       <div className="text-p1 text-fill_secondary">
-        <p class="mb-4">{blok.first_text}</p>
-        <p class="mb-4">{blok.second_text}</p>
-        <p class="mb-4">{blok.third_text}</p>
-        <p class="mb-4">{blok.fourth_text}</p>
-        <p class="mb-4">{blok.fifth_text}</p>
+        <p className="mb-4">{blok.first_text}</p>
+        <p className="mb-4">{blok.second_text}</p>
+        <p className="mb-4">{blok.third_text}</p>
+        <p className="mb-4">{blok.fourth_text}</p>
+        <p className="mb-4">{blok.fifth_text}</p>
       </div>
     </div>
   );
