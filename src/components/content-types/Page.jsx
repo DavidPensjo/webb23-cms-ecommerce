@@ -1,8 +1,10 @@
 import { StoryblokComponent } from "@storyblok/react/rsc";
+import { CategoryProvider } from "../../context/CategoryContext"; 
 
 //Content-type component (acts as template for all pages)
 export default function Page({ blok }) {
     return (
+        <CategoryProvider>
         <main className="flex flex-col items-center justify-center min-h-[80vh] w-full">
              <div className="flex flex-col items-center max-w-[1400px] sm:p-4 w-full mx-auto">
             {blok?.body?.map((blok) => (
@@ -10,5 +12,6 @@ export default function Page({ blok }) {
             ))}
             </div>
         </main>
+        </CategoryProvider>
     )
 }
