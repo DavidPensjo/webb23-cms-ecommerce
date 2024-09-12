@@ -57,13 +57,13 @@ export default function Hero({ blok }) {
             style={{ backgroundColor }}>
             <div className={contentAlignmentClass}>
 
-                <h2 className={`${titleSizeClass} ${titleColorClass} ${blok.title_font_weight || ''} py-2`}>
+                <h2 className={`${titleSizeClass} ${titleColorClass} ${blok.title_font_weight || ''} py-2 sm:m-0 m-2`}>
                     {blok.title}
                 </h2>
 
 
                 <p
-                    className={`${textSizeClass} ${textColorClass} ${blok.text_font_weight || ''} py-2`}
+                    className={`${textSizeClass} ${textColorClass} ${blok.text_font_weight || ''} py-2 sm:m-0 m-2`}
                     style={{ maxWidth: textFieldWidth }}
                 >
                     {blok.text}
