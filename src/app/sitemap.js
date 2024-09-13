@@ -11,8 +11,9 @@ export default async function sitemap() {
   console.log(pages);
 
   const sitemap = pages.map((page) => {
+    const slugPath = page.slug.join("/");
     return {
-      url: page,
+      url: `https://webb23-cms-ecommerce.vercel.app/${slugPath}`,
     };
   });
   return sitemap;
