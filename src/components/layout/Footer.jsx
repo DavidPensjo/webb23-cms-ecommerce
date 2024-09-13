@@ -38,7 +38,7 @@ const Footer = ({ config }) => {
           </div>
           <div>
             <p>Help</p>
-            <ul className="text-fill_secondary">
+            <ul className="text-fill_primary">
               <li className="cursor-pointer max-w-24">Help Center</li>
               <li className="cursor-pointer max-w-24">Order Status</li>
               <li className="cursor-pointer max-w-20">Size Chart</li>
@@ -48,7 +48,7 @@ const Footer = ({ config }) => {
           </div>
           <div>
             <p>About</p>
-            <ul className="text-fill_secondary">
+            <ul className="text-fill_primary">
               <li className="cursor-pointer max-w-20">About Us</li>
               <li className="cursor-pointer max-w-28">Responsibility</li>
               <li className="cursor-pointer max-w-48">

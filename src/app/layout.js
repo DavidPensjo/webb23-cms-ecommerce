@@ -5,6 +5,7 @@ import { StoryblokCMS } from "@/utils/cms";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+
 storyblokInit({
   accessToken: StoryblokCMS.TOKEN,
   use: [apiPlugin],

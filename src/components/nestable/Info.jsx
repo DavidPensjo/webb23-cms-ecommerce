@@ -6,7 +6,7 @@ const Info = ({ blok }) => {
       <div>
         <p className="text-h2 font-semibold mb-8 mt-28">{blok.title}</p>
       </div>
-      <div className="text-p1 text-fill_secondary">
+      <div className="text-p1 text-fill_primary">
         <p className="mb-4">{blok.first_text}</p>
         <p className="mb-4">{blok.second_text}</p>
         <p className="mb-4">{blok.third_text}</p>
