@@ -128,6 +128,7 @@ const SearchBar = () => {
         <input
           type="text"
           ref={inputRef}
+          label="Search"
           placeholder="Search products..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}

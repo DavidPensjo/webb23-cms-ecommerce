@@ -16,6 +16,7 @@ const Footer = ({ config }) => {
           <div className="flex flex-col space-y-2 pt-4">
             <input
               type="email"
+              label="Email"
               id="email"
               placeholder="Enter your email"
               className="w-full px-4 py-2 border-2 border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -25,7 +26,7 @@ const Footer = ({ config }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-1/2">
           <div>
             <p>Shop</p>
-            <ul className="text-fill_secondary">
+            <ul className="text-fill_primary">
               <li className="cursor-pointer max-w-20">Women’s</li>
               <li className="cursor-pointer max-w-12">Men’s</li>
               <li className="cursor-pointer max-w-24">Kids’ Shoes</li>
