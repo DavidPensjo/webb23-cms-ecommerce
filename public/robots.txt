@@ -6,4 +6,4 @@ Allow: /
 Host: https://webb23-cms-ecommerce.vercel.app
 
 # Sitemaps
-Sitemap: https://webb23-cms-ecommerce.vercel.app/sitemap-0.xml
+Sitemap: https://webb23-cms-ecommerce.vercel.app/sitemap.xml
